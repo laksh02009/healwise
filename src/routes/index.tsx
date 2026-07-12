@@ -7,9 +7,10 @@ export const Route = createFileRoute("/")({
 const heroImg = "https://lh3.googleusercontent.com/aida-public/AB6AXuACgXekr2yjN-Nl25ZLF4aZ96GRe8H6fmOQ8hD_1CRsyXC_RSgea7ySfDI9nZA8mbj2NVoUzzRAdb-IM7oBpVwr0T_bIdtQmYrv32wMByk4ICre_bouf6lClK2Dx6M42ONtLyOKsJb1278_y8uf62Jimws9uqX4Epp4VB-yf5xXLtZDyaJRBj9Aw4d_wzumuYV2MjWIxQQ05PztDX00xz1hjbKI5Lc0mS74jF1_4zKiifvZ3z9M6HB2HndmIU9LOXZUdlI2FgCrRwA";
 const aboutImg1 = "https://lh3.googleusercontent.com/aida-public/AB6AXuA6tGKZy8p1yk-OpYbaVyJcrSiPNHHDT1OZrZh1qkZULTiqyOogVl5CX6kG6e8YvapXUKo4PMESvykt77yTk2gKyAaedQ9BOlIo_--aMmedy4BoPsQ_xNqnhP8GjZNYypDpy8jpYF_5e5i3AhjAjSKDy7wXsQ0jbqpdEqj1lu6qDEuepDwGHhHIQPuCLnVikZ2KLeSMxQEus_Kg171Www_NlxmvlPIQNyUUJ9XYavHSqX4OE8nJ6nSPax-Y5UcLnULOUc3s_OJ8vFA";
 const aboutImg2 = "https://lh3.googleusercontent.com/aida-public/AB6AXuBn5cLxlSkpPpeqyKcQoOt7NFoi054_jfAj4jidBZRxYT6VlzKY37MzFp665ppq-UgUwo9wpyy4O39EkXbhJf8TNTDZi74jYZ0bwc9z6-d5yEJMbRXok7UC_ryD1LdO3KI5xV-jAta0EnpNePMoBSDADjVR_2y8lcCI123MIY3ypKvgtNG9hYcRTFYFR4eHFR5Rulay5IpV3ZwL0vTo1DPulUkmUb-vWIlAVHWKGRVumPkZi0Pspl7ykR4Bmmep_TnAKOZOvuqTFQM";
-const svc1 = "https://lh3.googleusercontent.com/aida-public/AB6AXuCHMWg6oeuqVCPxwBnJEM6rj3r7I9R1-5Inj-0tctTVFy2wrEVJmn4w6mlXGkkRWE2r9_-0Fi6EVCUxdcHw4JboicexaVH9aW8DAGZpeB_UacLWJLTxNBQGn-qE0FlzR87pm0q0WxLxMxtyWVZG-1NYAxlYE9HbShpo4YeUqjY8r9V13GWbenId4nak-95qDLTYQsgbLLjpLAIBGrTHU-hnY25UNCSiHKKJ8rNg8hocDKKiHTB7H_EE-QnUMev21s9P62Lhv3XXlKI";
-const svc2 = "https://lh3.googleusercontent.com/aida-public/AB6AXuCtlyvzWEp6xv9kmhOsrEnB2WcJHBOYyL1FTFEgGbJVa7LY2Rd2qdwccjQHN3SjYantPTcwMb5bxWdzv5y69sT_EDiEnzV90acVJepp7wJCCAwjXC4k3fLiHTrWpD0Np61JnST3lHWGSihh7IpUBCXrSfeYtkOxEHLs76nYTHs5S5HosdBGilBvCG6MCTTZYkdtIf7T9At8VfYAG31nlUD9LBkq_TfeuZYuiugUcE8pUR5hk4YaIVBoLL5Vx9iaQDJ16-sDBu9dKXg";
-const svc3 = "https://lh3.googleusercontent.com/aida-public/AB6AXuCzhODz6K98_0jWgabUsQY3hcGC6R3rRKT4ZBVoPyypZbLEp6y2vEAFZQrTpvvlxsyf8abNmQLKqvE_8eDcqxr4o628ipTCUu89bMNMmnWwir4f390nfRANrBwf_An9lRL1BIRi59eeUUHTHYDW9QZsgHtoukRs9WZUEOHhlsHQJ-UBfd_MW1vaYlK8hKZ0SwQZEBAGwTYlqBURdfcIS0BM2k5HlnkC049TTOp1mXldXYq9PM3804jo_D-KZ-m__JXS8GU7B4FG-9U";
+const svc1 = "/images/services/g5.jpeg";
+const svc2 = "/images/services/tens.jpeg";
+const svc3 = "/images/services/body-contouring.jpeg";
+const svc4 = "/images/services/mud-pack.jpeg";
 
 const Icon = ({ name, className = "" }: { name: string; className?: string }) => (
   <span className={`material-symbols-outlined ${className}`}>{name}</span>
@@ -26,11 +27,39 @@ function Index() {
   ];
 
   const services = [
-    { img: svc1, title: "Weight Management", desc: "Science-driven protocols focusing on metabolic health and sustainable body composition.", feature: "Hormonal balance support", tag: "Suitable for: Post-partum, 40+", highlight: false },
-    { img: svc2, title: "Pain Relief (TENS)", desc: "Advanced electro-stimulation therapy for chronic nerve and muscle pain relief.", feature: "Non-invasive & Medication-free", tag: "Suitable for: Knee, Back, Sciatica", highlight: true },
-    { img: svc3, title: "Mud Pack Therapy", desc: "Detoxifying heat treatments to improve circulation and soothe deep muscle tension.", feature: "Deep tissue relaxation", tag: "Suitable for: Fibromyalgia, Joint stiffness", highlight: false },
-  ];
-
+  {
+    img: svc1,
+    title: "G5 Massage Therapy",
+    desc: "Advanced G5 massage therapy helps improve blood circulation, reduce muscle stiffness, support lymphatic drainage, and promote overall body wellness.",
+    feature: "Improves circulation & muscle recovery",
+    tag: "Suitable for: Body Toning & Muscle Relaxation",
+    highlight: false,
+  },
+  {
+    img: svc2,
+    title: "TENS Therapy",
+    desc: "A safe, non-invasive therapy that uses electrical nerve stimulation to relieve pain, improve mobility, and support faster recovery.",
+    feature: "Drug-Free Pain Relief",
+    tag: "Suitable for: Back Pain, Knee Pain & Sciatica",
+    highlight: true,
+  },
+  {
+    img: svc3,
+    title: "Mud Pack Therapy",
+    desc: "Natural mud therapy helps reduce inflammation, relax muscles, improve circulation, and provide relief from joint pain and stiffness.",
+    feature: "Natural Healing & Relaxation",
+    tag: "Suitable for: Joint Pain & Muscle Fatigue",
+    highlight: false,
+  },
+  {
+    img: svc4,
+    title: "Body Contouring Therapy",
+    desc: "A personalized non-surgical body contouring therapy designed to support inch loss, improve skin firmness, and enhance body shape through advanced wellness techniques.",
+    feature: "Safe & Non-Invasive",
+    tag: "Suitable for: Inch Loss & Body Shaping",
+    highlight: false,
+  },
+];
   const steps = ["Consultation", "Evaluation", "Custom Plan", "Active Care", "Progress Map", "Maintenance"];
   const stepDesc = ["Diagnostic assessment and goal setting.", "Clinical review of musculoskeletal health.", "Bespoke therapy scheduling.", "Hands-on therapy sessions.", "Bi-weekly result tracking.", "Long-term wellness guidance."];
 
@@ -196,20 +225,24 @@ function Index() {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
               <div className="max-w-2xl">
-                <h2 className="text-4xl text-primary mb-4 font-semibold">Our Services</h2>
-                <p className="text-on-surface-variant">Discover our range of clinical therapies designed for precision recovery and sustained wellness.</p>
+                <h2 className="text-4xl text-primary mb-4 font-semibold">Our Specialized Therapies</h2>
+                <p className="text-on-surface-variant"> Personalized wellness therapies designed to relieve pain, improve mobility, support body wellness, and help women lead healthier, more active lives.</p>
               </div>
               <div className="flex gap-2">
                 <button aria-label="Previous" className="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-white transition-all"><Icon name="chevron_left" /></button>
                 <button aria-label="Next" className="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-white transition-all"><Icon name="chevron_right" /></button>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {services.map((s) => (
                 <div key={s.title} className={`glass-card flex flex-col h-full overflow-hidden ${s.highlight ? "border-2 border-primary/20" : ""}`}>
-                  <div className="h-48 overflow-hidden">
-                    <img className="w-full h-full object-cover" src={s.img} alt={s.title} />
-                  </div>
+                 <div className="aspect-video overflow-hidden rounded-t-3xl bg-gray-100">
+                  <img
+                    src={s.img}
+                    alt={s.title}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
                   <div className="p-8 flex flex-col flex-grow">
                     <h3 className="text-xl mb-2 font-semibold">{s.title}</h3>
                     <p className="text-sm text-on-surface-variant mb-6 leading-relaxed">{s.desc}</p>
@@ -229,64 +262,137 @@ function Index() {
           </div>
         </section>
 
-        {/* Why HealWise Bento */}
+        {/* Why Choose HealWise */}
         <section id="why" className="py-24 px-6 lg:px-10">
           <div className="max-w-7xl mx-auto">
+
             <div className="text-center mb-16">
-              <h2 className="text-4xl text-primary mb-4 font-semibold">Why Choose HealWise</h2>
+              <h2 className="text-4xl text-primary mb-4 font-semibold">
+                Why Choose HealWise Wellness
+              </h2>
+
+              <p className="text-on-surface-variant max-w-2xl mx-auto">
+                Dedicated to helping women achieve a healthier, pain-free lifestyle
+                through safe, personalized, and effective wellness therapies.
+              </p>
             </div>
+
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-[200px]">
+
+              {/* Main Card */}
               <div className="md:col-span-8 md:row-span-2 glass-card p-10 flex flex-col justify-end relative overflow-hidden">
+
                 <div className="absolute top-10 right-10 text-primary opacity-10 pointer-events-none">
-                  <Icon name="medical_services" className="!text-9xl" />
+                  <Icon name="workspace_premium" className="!text-9xl" />
                 </div>
-                <h3 className="text-3xl mb-4 font-semibold">Personalized Consultation</h3>
-                <p className="text-on-surface-variant max-w-lg">Every woman's body tells a different story. We start with a 60-minute deep-dive diagnostic session to map your unique physiology before any treatment begins.</p>
+
+                <h3 className="text-3xl mb-4 font-semibold">
+                  15+ Years of Trusted Experience
+                </h3>
+
+                <p className="text-on-surface-variant max-w-lg">
+                  HealWise Wellness has been helping women improve their health through
+                  personalized pain relief, wellness therapies, and body care
+                  treatments. Every therapy plan is designed according to individual
+                  health needs for better and long-lasting results.
+                </p>
+
               </div>
+
               {[
-                { icon: "diversity_1", title: "Expert Care", desc: "Certified therapists with specializations in female anatomy." },
-                { icon: "spa", title: "Non-Invasive", desc: "Purely therapeutic methods with zero downtime." },
-                { icon: "science", title: "Modern Tech", desc: "FDA-cleared diagnostic and therapeutic equipment." },
-              ].map((f) => (
-                <div key={f.title} className="md:col-span-4 glass-card p-8 flex items-center gap-4">
-                  <Icon name={f.icon} className="text-primary !text-3xl" />
+                {
+                  icon: "favorite",
+                  title: "Personalized Care",
+                  desc: "Customized treatment plans based on your health concerns.",
+                },
+                {
+                  icon: "spa",
+                  title: "Safe & Non-Invasive",
+                  desc: "Comfortable therapies without surgery or lengthy recovery.",
+                },
+                {
+                  icon: "groups",
+                  title: "200+ Happy Clients",
+                  desc: "Trusted by women across Jaipur for professional wellness care.",
+                },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="md:col-span-4 glass-card p-8 flex items-center gap-4"
+                >
+                  <Icon
+                    name={item.icon}
+                    className="text-primary !text-3xl"
+                  />
+
                   <div>
-                    <h4 className="text-lg font-semibold">{f.title}</h4>
-                    <p className="text-sm text-on-surface-variant">{f.desc}</p>
+                    <h4 className="text-lg font-semibold">
+                      {item.title}
+                    </h4>
+
+                    <p className="text-sm text-on-surface-variant">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
               ))}
-              <div className="md:col-span-8 glass-card p-10 flex flex-col justify-center">
-                <h3 className="text-xl mb-2 font-semibold">Clinical Sanctuary Environment</h3>
-                <p className="text-on-surface-variant">Our clinic is designed to be a digital sanctuary—quiet, airy, and focused on your mental and physical calm.</p>
+
+              {/* Bottom Card */}
+
+              <div className="md:col-span-8 glass-card p-10">
+
+                <h3 className="text-xl font-semibold mb-6">
+                  Trusted Wellness Care in Jaipur
+                </h3>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+                  <div>
+                    <h4 className="text-4xl font-bold text-primary">
+                      15+
+                    </h4>
+                    <p className="text-sm text-on-surface-variant mt-2">
+                      Years Experience
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-4xl font-bold text-primary">
+                      200+
+                    </h4>
+                    <p className="text-sm text-on-surface-variant mt-2">
+                      Happy Clients
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-4xl font-bold text-primary">
+                      4+
+                    </h4>
+                    <p className="text-sm text-on-surface-variant mt-2">
+                      Specialized Therapies
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-4xl font-bold text-primary">
+                      100%
+                    </h4>
+                    <p className="text-sm text-on-surface-variant mt-2">
+                      Personalized Care
+                    </p>
+                  </div>
+
+                </div>
+
               </div>
+
             </div>
+
           </div>
         </section>
 
-        {/* Process */}
-        <section className="py-24 px-6 lg:px-10 bg-surface-container-highest">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20">
-              <h2 className="text-4xl text-primary mb-4 font-semibold">Your Journey to Recovery</h2>
-              <p className="text-on-surface-variant">A structured, 6-step clinical pathway designed for results.</p>
-            </div>
-            <div className="relative">
-              <div className="hidden lg:block absolute top-8 left-0 w-full h-1 bg-primary/10" />
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-                {steps.map((s, i) => (
-                  <div key={s} className="relative text-center group">
-                    <div className={`w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center relative z-10 transition-transform group-hover:scale-110 ${i === 3 ? "bg-primary" : "bg-white border-2 border-primary"}`}>
-                      <span className={`font-bold ${i === 3 ? "text-white" : "text-primary"}`}>0{i + 1}</span>
-                    </div>
-                    <h4 className="font-medium mb-2">{s}</h4>
-                    <p className="text-xs text-on-surface-variant">{stepDesc[i]}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Testimonials */}
         <section id="testimonials" className="py-24 px-6 lg:px-10">
@@ -335,47 +441,168 @@ function Index() {
           <div className="max-w-7xl mx-auto">
             <div className="glass-card p-1 md:p-2 overflow-hidden lavender-shadow">
               <div className="grid grid-cols-1 lg:grid-cols-2">
+
+                {/* Left Side */}
                 <div className="p-8 md:p-12">
-                  <h2 className="text-4xl text-primary mb-8 font-semibold">Get in Touch</h2>
-                  <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                  <h2 className="text-4xl text-primary mb-3 font-semibold">
+                    Book Your Appointment
+                  </h2>
+
+                  <p className="text-on-surface-variant mb-8">
+                    Have questions or want to schedule a therapy session? Fill out the form below and we'll get in touch with you shortly.
+                  </p>
+
+                  <form
+                    className="space-y-6"
+                    onSubmit={(e) => e.preventDefault()}
+                  >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">Full Name</label>
-                        <input className="w-full bg-secondary-container/20 rounded-xl focus:ring-2 focus:ring-primary/40 focus:outline-none p-4" placeholder="Your name" type="text" />
+                        <label className="text-sm font-medium">
+                          Full Name
+                        </label>
+
+                        <input
+                          className="w-full bg-secondary-container/20 rounded-xl focus:ring-2 focus:ring-primary/40 focus:outline-none p-4"
+                          placeholder="Your Name"
+                          type="text"
+                        />
                       </div>
+
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">Phone Number</label>
-                        <input className="w-full bg-secondary-container/20 rounded-xl focus:ring-2 focus:ring-primary/40 focus:outline-none p-4" placeholder="+1 (555) 000-0000" type="tel" />
+                        <label className="text-sm font-medium">
+                          Phone Number
+                        </label>
+
+                        <input
+                          className="w-full bg-secondary-container/20 rounded-xl focus:ring-2 focus:ring-primary/40 focus:outline-none p-4"
+                          placeholder="9351334587"
+                          type="tel"
+                        />
                       </div>
+
                     </div>
+
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Email Address</label>
-                      <input className="w-full bg-secondary-container/20 rounded-xl focus:ring-2 focus:ring-primary/40 focus:outline-none p-4" placeholder="email@example.com" type="email" />
+                      <label className="text-sm font-medium">
+                        Email Address
+                      </label>
+
+                      <input
+                        className="w-full bg-secondary-container/20 rounded-xl focus:ring-2 focus:ring-primary/40 focus:outline-none p-4"
+                        placeholder="healwisewellness@gmail.com"
+                        type="email"
+                      />
                     </div>
+
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Your Message</label>
-                      <textarea className="w-full bg-secondary-container/20 rounded-xl focus:ring-2 focus:ring-primary/40 focus:outline-none p-4" placeholder="Tell us how we can help..." rows={4} />
+                      <label className="text-sm font-medium">
+                        Your Message
+                      </label>
+
+                      <textarea
+                        className="w-full bg-secondary-container/20 rounded-xl focus:ring-2 focus:ring-primary/40 focus:outline-none p-4"
+                        placeholder="Tell us about your health concern..."
+                        rows={4}
+                      />
                     </div>
-                    <button className="btn-primary w-full py-4 rounded-xl font-bold hover:scale-[1.02] transition-transform" type="submit">Send Message</button>
+
+                    <button
+                      className="btn-primary w-full py-4 rounded-xl font-bold hover:scale-[1.02] transition-transform"
+                      type="submit"
+                    >
+                      Book Appointment
+                    </button>
+
+                    <p className="text-center text-sm text-on-surface-variant">
+                      We usually respond within 24 hours.
+                    </p>
+
                   </form>
                 </div>
+
+                {/* Right Side */}
+
                 <div className="bg-primary p-8 md:p-12 text-primary-foreground flex flex-col justify-between rounded-3xl">
+
                   <div>
-                    <h3 className="text-3xl mb-8 font-semibold">Contact Information</h3>
+
+                    <h3 className="text-3xl mb-8 font-semibold">
+                      Contact Information
+                    </h3>
+
                     <div className="space-y-8">
-                      <div className="flex gap-4"><Icon name="location_on" /><p>123 Wellness Blvd, Suite 400<br />San Francisco, CA 94103</p></div>
-                      <div className="flex gap-4"><Icon name="call" /><p>+1 (555) 234-5678</p></div>
-                      <div className="flex gap-4"><Icon name="mail" /><p>hello@healwiseclinic.com</p></div>
-                      <div className="flex gap-4"><Icon name="schedule" /><p>Mon - Fri: 8:00 AM - 7:00 PM<br />Sat: 9:00 AM - 4:00 PM</p></div>
+
+                      <div className="flex gap-4">
+                        <Icon name="location_on" />
+                        <p>
+                          125, Jadon Nagar B
+                          <br />
+                          Durgapura, Jaipur
+                          <br />
+                          Rajasthan - 302018
+                        </p>
+                      </div>
+
+                      <div className="flex gap-4">
+                        <Icon name="call" />
+                        <a
+                          href="tel:9351334587"
+                          className="hover:underline"
+                        >
+                          +91 9351334587
+                        </a>
+                      </div>
+
+                      <div className="flex gap-4">
+                        <Icon name="chat" />
+                        <a
+                          href="https://wa.me/918209975987"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                        >
+                          +91 8209975987
+                        </a>
+                      </div>
+
+                      <div className="flex gap-4">
+                        <Icon name="mail" />
+                        <a
+                          href="mailto:healwisewellness@gmail.com"
+                          className="hover:underline"
+                        >
+                          healwisewellness@gmail.com
+                        </a>
+                      </div>
+
+                      <div className="flex gap-4">
+                        <Icon name="schedule" />
+                        <p>
+                          Monday – Saturday
+                          <br />
+                          8:00 AM – 6:00 PM
+                        </p>
+                      </div>
+
                     </div>
+
                   </div>
-                  <div className="mt-12 rounded-2xl overflow-hidden h-48 border border-white/20">
-                    <div className="w-full h-full bg-white/10 flex items-center justify-center italic text-sm">
-                      <Icon name="map" className="mr-2" />
-                      Interactive Location Map
-                    </div>
+
+                  <div className="mt-12 rounded-2xl overflow-hidden h-60 border border-white/20">
+
+                    <iframe
+                      src="https://www.google.com/maps?q=125,+Jadon+Nagar+B,+Durgapura,+Jaipur&output=embed"
+                      className="w-full h-full"
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+
                   </div>
+
                 </div>
+
               </div>
             </div>
           </div>
@@ -383,7 +610,9 @@ function Index() {
       </main>
 
       <footer className="border-t border-primary/10 py-10 px-6 lg:px-10 text-center text-sm text-on-surface-variant">
-        <p>© {new Date().getFullYear()} HealWise Clinic — Personalized women's wellness.</p>
+        <p>
+          © {new Date().getFullYear()} HealWise Wellness. All Rights Reserved.
+        </p>
       </footer>
     </div>
   );

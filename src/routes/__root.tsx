@@ -85,8 +85,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "HealWise — Women's Pain Relief & Weight Management Clinic" },
       { name: "twitter:description", content: "Personalized pain relief, recovery, and weight management programs for women. Non-invasive, science-backed therapies in a clinical sanctuary." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c6ad2770-0423-4cbc-bd71-9148ddd696e3/id-preview-65990b88--6e9f2868-59c1-4e29-9842-211574df3980.lovable.app-1783668104619.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c6ad2770-0423-4cbc-bd71-9148ddd696e3/id-preview-65990b88--6e9f2868-59c1-4e29-9842-211574df3980.lovable.app-1783668104619.png" },
+      { property: "og:image", content: "/og-image.png",},
+      { name: "twitter:image", content: "/og-image.png",},
     ],
     links: [
       { rel: "stylesheet", href: appCss },
