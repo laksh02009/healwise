@@ -76,21 +76,35 @@ function Index() {
           <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-28 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="max-w-xl">
               <span className="inline-block px-4 py-1 rounded-full bg-primary-container text-on-primary-container text-xs font-medium tracking-wide mb-6">
-                Welcome to Clinical Excellence
+                Welcome to HealWise Wellness
               </span>
               <h1 className="text-5xl lg:text-6xl text-primary mb-6 leading-[1.05] font-semibold">
-                Relief. Recovery.<br />
-                <span className="italic font-normal">Confidence.</span>
+                Personalized Pain Relief <br />
+                <span className="italic font-normal">& Wellness Care</span> <br />
+                for Women
               </h1>
               <p className="text-lg text-on-surface-variant mb-8 leading-relaxed">
-                Supporting women through personalized pain relief and weight management programs designed for every stage of life. Experience a sanctuary of professional care.
+                HealWise Wellness in Jaipur offers personalized pain relief and wellness therapies for women, including G5 Massage, TENS Therapy, Mud Pack Therapy, and Body Contouring treatments to help you feel healthier and live pain-free.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="#contact" className="btn-primary px-8 py-4 rounded-full font-semibold hover:scale-105 transition-all">Book Consultation</a>
-                <a href="#services" className="px-8 py-4 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/5 transition-all">Explore Services</a>
-              </div>
-            </div>
-            <div className="hidden md:block relative">
+  <a
+    href="#contact"
+    className="btn-primary px-8 py-4 rounded-full font-semibold hover:scale-105 transition-all"
+  >
+    Book Appointment
+  </a>
+
+  <a
+    href="#services"
+    className="px-8 py-4 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/5 transition-all"
+  >
+    View Our Services
+  </a>
+</div>
+
+</div> {/* <-- Ye missing hai */}
+
+<div className="hidden md:block relative">
               <div className="glass-card p-4 rotate-3 hover:rotate-0 transition-transform duration-500">
                 <img className="w-full h-[500px] object-cover rounded-[20px]" src={heroImg} alt="Professional women's wellness clinic" />
               </div>
@@ -99,7 +113,7 @@ function Index() {
                   <div className="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
                     <Icon name="verified" className="text-secondary" />
                   </div>
-                  <p className="text-sm font-medium">5,000+ Successful Recoveries</p>
+                  <p className="text-sm font-medium">200+ Successful Recoveries</p>
                 </div>
               </div>
             </div>
