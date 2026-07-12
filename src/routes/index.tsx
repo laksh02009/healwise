@@ -9,8 +9,8 @@ const aboutImg1 = "https://lh3.googleusercontent.com/aida-public/AB6AXuA6tGKZy8p
 const aboutImg2 = "https://lh3.googleusercontent.com/aida-public/AB6AXuBn5cLxlSkpPpeqyKcQoOt7NFoi054_jfAj4jidBZRxYT6VlzKY37MzFp665ppq-UgUwo9wpyy4O39EkXbhJf8TNTDZi74jYZ0bwc9z6-d5yEJMbRXok7UC_ryD1LdO3KI5xV-jAta0EnpNePMoBSDADjVR_2y8lcCI123MIY3ypKvgtNG9hYcRTFYFR4eHFR5Rulay5IpV3ZwL0vTo1DPulUkmUb-vWIlAVHWKGRVumPkZi0Pspl7ykR4Bmmep_TnAKOZOvuqTFQM";
 const svc1 = "/images/services/g5.jpeg";
 const svc2 = "/images/services/tens.jpeg";
-const svc3 = "/images/services/body-contouring.jpeg";
-const svc4 = "/images/services/mud-pack.jpeg";
+const svc4 = "/images/services/body-contouring.png";
+const svc3 = "/images/services/mud-pack.jpeg";
 
 const Icon = ({ name, className = "" }: { name: string; className?: string }) => (
   <span className={`material-symbols-outlined ${className}`}>{name}</span>
