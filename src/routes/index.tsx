@@ -537,11 +537,11 @@ function Index() {
                       <div className="flex gap-4">
                         <Icon name="location_on" />
                         <p>
-                          125, Jadon Nagar B
+                          2/149 Near Ragunath Temple
                           <br />
-                          Durgapura, Jaipur
+                          Sanganer, Jaipur
                           <br />
-                          Rajasthan - 302018
+                          Rajasthan - 302029
                         </p>
                       </div>
 
